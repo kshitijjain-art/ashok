@@ -1,220 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dr. Ashok Kumar | Energy-Efficient & Net-Zero Buildings</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr. Ashok Kumar – Senior Scientist, CSIR-CBRI | Founder & CEO – Architectural & Sustainability Consultancy | Energy Efficient, Green & Net Zero Buildings">
+<meta charset="UTF-8">
+<title>Dr. Ashok Kumar | Net Zero & Energy-Efficient Buildings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --blue: #0B3C5D;
-      --green: #2E8B57;
-      --bg: #F5F7FA;
-      --dark: #1F2933;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      color: var(--dark);
-      background: white;
-      line-height: 1.6;
-    }
-
-    h1, h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-      color: var(--blue);
-    }
-
-    a { text-decoration: none; }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(rgba(11,60,93,0.85), rgba(11,60,93,0.85)),
-                  url('https://images.unsplash.com/photo-1509395176047-4a66953fd231') center/cover;
-      color: white;
-      padding: 90px 20px;
-      text-align: center;
-    }
-
-    .hero h1 { color: white; font-size: 42px; }
-    .hero p { font-size: 18px; max-width: 900px; margin: auto; }
-
-    .buttons a {
-      display: inline-block;
-      margin: 15px 10px;
-      padding: 12px 24px;
-      background: var(--green);
-      color: white;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: var(--bg);
-      padding: 25px;
-      border-left: 5px solid var(--green);
-      border-radius: 4px;
-    }
-
-    .who {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .cta {
-      background: var(--blue);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .cta a {
-      background: var(--green);
-      padding: 14px 26px;
-      margin: 10px;
-      display: inline-block;
-      color: white;
-      font-weight: 600;
-      border-radius: 4px;
-    }
-
-    footer {
-      background: #061F30;
-      color: #ddd;
-      padding: 30px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    @media(max-width: 768px) {
-      .about { grid-template-columns: 1fr; text-align: center; }
-      .hero h1 { font-size: 32px; }
-    }
-  </style>
+<style>
+:root{
+--blue:#0B3C5D;
+--green:#2E8B57;
+--light:#F5F7FA;
+--dark:#1F2933;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Open Sans',sans-serif;
+color:var(--dark);
+}
+h1,h2,h3{
+font-family:'Montserrat',sans-serif;
+color:var(--blue);
+}
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+.hero{
+background:
+linear-gradient(rgba(11,60,93,.85),rgba(11,60,93,.85)),
+url("https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:#fff;
+text-align:center;
+padding:120px 20px;
+}
+.hero h1{color:#fff;font-size:42px}
+.hero p{font-size:18px;max-width:900px;margin:auto}
+.btn{
+display:inline-block;
+margin:15px 10px;
+padding:14px 28px;
+background:var(--green);
+color:#fff;
+font-weight:600;
+border-radius:4px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+.card{
+background:var(--light);
+padding:30px;
+border-left:6px solid var(--green);
+border-radius:6px;
+}
+.icon{
+font-size:40px;
+margin-bottom:15px;
+}
+.cta{
+background:var(--blue);
+color:#fff;
+text-align:center;
+padding:80px 20px;
+}
+.cta h2{color:#fff}
+footer{
+background:#061F30;
+color:#ddd;
+text-align:center;
+padding:30px;
+font-size:14px;
+}
+img.responsive{
+width:100%;
+border-radius:8px;
+}
+@media(max-width:768px){
+.hero h1{font-size:32px}
+}
+</style>
 </head>
 
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Advancing Energy-Efficient & Net-Zero Built Environment</h1>
-  <p>Research • Policy • Architecture • Industry Implementation</p>
-  <p><strong>Dr. Ashok Kumar</strong><br>
-     Senior Scientist, :contentReference[oaicite:0]{index=0}<br>
-     Founder & CEO – Architectural & Sustainability Consultancy
-  </p>
-  <div class="buttons">
-    <a href="#contact">Request Lecture</a>
-    <a href="#contact">Consultancy & Training</a>
-  </div>
+<h1>Advancing Energy-Efficient & Net-Zero Built Environment</h1>
+<p>Research • Policy • Architecture • Industry Implementation</p>
+<p><strong>Dr. Ashok Kumar</strong><br>
+Senior Scientist, CSIR-CBRI<br>
+Founder & CEO – Architectural & Sustainability Consultancy
+</p>
+<a class="btn" href="#contact">Request Lecture</a>
+<a class="btn" href="#contact">Consultancy & Training</a>
 </div>
 
 <!-- ABOUT -->
 <section>
-  <div class="about">
-    <div>
-      <img src="https://images.unsplash.com/photo-1581091215367-59ab6b0c0c1c"
-           alt="Sustainable Building"
-           style="width:100%; border-radius:6px;">
-    </div>
-    <div>
-      <h2>About</h2>
-      <p>
-        Dr. Ashok Kumar is a senior scientist at CSIR-CBRI and the
-        <strong>Founder & CEO of an Architectural and Sustainability Consultancy</strong>.
-        His work focuses on translating advanced building research into
-        <strong>real-world, high-performance, energy-efficient and net-zero buildings</strong>.
-      </p>
-    </div>
-  </div>
+<div class="grid">
+<div>
+<img class="responsive" src="https://images.unsplash.com/photo-1581091215367-59ab6b0c0c1c?auto=format&fit=crop&w=900&q=80" alt="Sustainable Building">
+</div>
+<div>
+<h2>About</h2>
+<p>
+Dr. Ashok Kumar is a senior scientist at CSIR-CBRI and the
+<strong>Founder & CEO of an Architectural & Sustainability Consultancy</strong>.
+His work focuses on translating research into
+<strong>real-world energy-efficient, green and net-zero buildings</strong>
+for academia, government and industry.
+</p>
+</div>
+</div>
 </section>
 
 <!-- EXPERTISE -->
-<section style="background:var(--bg);">
-  <h2>Core Expertise</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>Energy-Efficient Buildings</h3>
-      <p>Building energy modelling, passive design, HVAC & envelope optimisation.</p>
-    </div>
-    <div class="card">
-      <h3>Green Construction</h3>
-      <p>Low-carbon materials, LCA, sustainable & circular construction.</p>
-    </div>
-    <div class="card">
-      <h3>Net-Zero Buildings</h3>
-      <p>Net-zero energy & carbon design, renewables, carbon accounting.</p>
-    </div>
-    <div class="card">
-      <h3>Architectural Consultancy</h3>
-      <p>Energy-efficient design, DPR review, performance-based advisory.</p>
-    </div>
-  </div>
+<section style="background:var(--light)">
+<h2>Core Expertise</h2>
+<div class="grid">
+<div class="card">
+<div class="icon">🏢</div>
+<h3>Energy-Efficient Buildings</h3>
+<p>Energy modelling, passive design, HVAC & envelope optimisation.</p>
+</div>
+<div class="card">
+<div class="icon">🌱</div>
+<h3>Green Construction</h3>
+<p>Low-carbon materials, LCA, sustainable & circular construction.</p>
+</div>
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Net-Zero Buildings</h3>
+<p>Net-zero energy & carbon design, renewables, carbon accounting.</p>
+</div>
+<div class="card">
+<div class="icon">📐</div>
+<h3>Architectural Consultancy</h3>
+<p>Performance-based design, DPR review, advisory & implementation.</p>
+</div>
+</div>
 </section>
 
 <!-- WHO WE SERVE -->
 <section>
-  <h2>Who We Serve</h2>
-  <div class="who">
-    <div>
-      <h3>🎓 Academia</h3>
-      <p>FDPs, guest lectures, curriculum & research mentoring.</p>
-    </div>
-    <div>
-      <h3>🏛 Government</h3>
-      <p>Policy advisory, public buildings, net-zero roadmaps.</p>
-    </div>
-    <div>
-      <h3>🏭 Industry & Developers</h3>
-      <p>Consultancy, audits, ESG & compliance support.</p>
-    </div>
-  </div>
+<h2>Who We Serve</h2>
+<div class="grid">
+<div>
+<h3>🎓 Academia</h3>
+<p>FDPs, lectures, research mentoring, student studios.</p>
+</div>
+<div>
+<h3>🏛 Government</h3>
+<p>Public buildings, policy advisory, net-zero roadmaps.</p>
+</div>
+<div>
+<h3>🏭 Industry & Developers</h3>
+<p>Consultancy, audits, ESG & compliance solutions.</p>
+</div>
+</div>
 </section>
 
 <!-- CTA -->
 <div class="cta" id="contact">
-  <h2>Collaborate & Engage</h2>
-  <p>Lectures • Training • Policy Advisory • Architectural Consultancy</p>
-  <a href="#">Request Lecture</a>
-  <a href="#">Consultancy Enquiry</a>
+<h2>Collaborate & Engage</h2>
+<p>Lectures • Training • Policy Advisory • Architectural Consultancy</p>
+<a class="btn" href="#">Request Lecture</a>
+<a class="btn" href="#">Consultancy Enquiry</a>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <p>
-    Dr. Ashok Kumar<br>
-    Senior Scientist – CSIR-CBRI<br>
-    Founder & CEO – Architectural & Sustainability Consultancy<br><br>
-    Roorkee, Uttarakhand, India
-  </p>
-  <p>© Centre of Excellence for Energy-Efficient & Net-Zero Built Environment</p>
+<p>
+Dr. Ashok Kumar<br>
+Senior Scientist – CSIR-CBRI<br>
+Founder & CEO – Architectural & Sustainability Consultancy<br><br>
+Roorkee, Uttarakhand, India
+</p>
+<p>© Centre of Excellence for Energy-Efficient & Net-Zero Built Environment</p>
 </footer>
 
 </body>
