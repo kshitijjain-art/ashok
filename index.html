@@ -15,157 +15,78 @@
 --dark:#1F2933;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{
-font-family:'Open Sans',sans-serif;
-color:var(--dark);
-line-height:1.65;
-background:#ffffff;
-}
-h1,h2,h3{
-font-family:'Montserrat',sans-serif;
-color:var(--blue);
-margin-bottom:12px;
-}
-section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
+body{font-family:'Open Sans',sans-serif;color:var(--dark);line-height:1.65}
+h1,h2,h3{font-family:'Montserrat',sans-serif;color:var(--blue);margin-bottom:12px}
+section{padding:80px 20px;max-width:1200px;margin:auto}
 a{text-decoration:none}
 
 /* NAVBAR */
 nav{
-position:fixed;
-top:0;
-width:100%;
-background:#fff;
-box-shadow:0 2px 8px rgba(0,0,0,0.08);
-z-index:1000;
+position:fixed;top:0;width:100%;
+background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);
+z-index:1000
 }
 .nav-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:14px 20px;
+max-width:1200px;margin:auto;
+display:flex;justify-content:space-between;align-items:center;
+padding:14px 20px
 }
-.nav-container strong{
-font-size:18px;
-color:var(--blue);
-}
-.nav-links a{
-margin-left:20px;
-font-weight:600;
-color:var(--dark);
-}
-.nav-links a:hover{
-color:var(--green);
-}
+.nav-links a{margin-left:20px;font-weight:600;color:var(--dark)}
+.nav-links a:hover{color:var(--green)}
 
 /* HERO */
 .hero{
 margin-top:70px;
 background:linear-gradient(135deg,#0B3C5D,#133F5E);
-color:#fff;
-text-align:center;
-padding:120px 20px;
+color:#fff;text-align:center;padding:120px 20px
 }
-.hero h1{
-color:#fff;
-font-size:40px;
-}
-.hero p{
-max-width:900px;
-margin:14px auto;
-font-size:18px;
-}
+.hero h1{color:#fff;font-size:40px}
+.hero p{max-width:900px;margin:14px auto;font-size:18px}
 .badge{
-display:inline-block;
-background:#2E8B57;
-color:#fff;
-padding:6px 16px;
-border-radius:20px;
-font-size:13px;
-font-weight:600;
-margin:10px 0;
+display:inline-block;background:#2E8B57;color:#fff;
+padding:6px 18px;border-radius:20px;
+font-size:13px;font-weight:600;margin:10px 0
 }
 .btn{
-display:inline-block;
-background:var(--green);
-color:#fff;
-padding:14px 28px;
-margin:12px;
-border-radius:4px;
-font-weight:600;
+display:inline-block;background:var(--green);color:#fff;
+padding:14px 28px;margin:10px;border-radius:4px;font-weight:600
 }
 
 /* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+gap:30px
 }
 
-/* INFOGRAPHICS */
+/* METRICS */
 .metric{
-background:#fff;
-padding:35px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 4px 14px rgba(0,0,0,0.06);
+background:#fff;padding:35px;border-radius:10px;
+text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.06)
 }
-.metric h3{
-font-size:36px;
-color:var(--green);
-}
-.metric p{
-font-weight:600;
-}
+.metric h3{font-size:36px;color:var(--green)}
+.metric p{font-weight:600}
 
 /* TABLES */
-.table-container{
-overflow-x:auto;
-margin-top:30px;
-}
-table{
-width:100%;
-border-collapse:collapse;
-background:#fff;
-}
-th,td{
-border:1px solid #ddd;
-padding:12px;
-font-size:14px;
-text-align:left;
-}
-th{
-background:var(--blue);
-color:#fff;
-}
-tr:nth-child(even){
-background:#f9f9f9;
-}
+.table-container{overflow-x:auto;margin-top:30px}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{border:1px solid #ddd;padding:12px;font-size:14px}
+th{background:var(--blue);color:#fff}
+tr:nth-child(even){background:#f9f9f9}
 
 /* CTA */
 .cta{
-background:var(--blue);
-color:#fff;
-text-align:center;
-padding:90px 20px;
+background:var(--blue);color:#fff;text-align:center;
+padding:90px 20px
 }
 .cta h2{color:#fff}
 
 /* FOOTER */
 footer{
-background:#061F30;
-color:#ddd;
-text-align:center;
-padding:35px;
-font-size:14px;
+background:#061F30;color:#ddd;text-align:center;
+padding:35px;font-size:14px
 }
 
-/* MOBILE */
 @media(max-width:768px){
 .hero h1{font-size:30px}
 .nav-links{display:none}
@@ -177,126 +98,149 @@ font-size:14px;
 
 <!-- NAVBAR -->
 <nav>
-  <div class="nav-container">
-    <strong>Dr. Ashok Kumar</strong>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#recognition">Recognition</a>
-      <a href="#research">Research</a>
-      <a href="#patents">Patents</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+<div class="nav-container">
+<strong>Dr. Ashok Kumar</strong>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#impact">Impact</a>
+<a href="#charts">Charts</a>
+<a href="#research">Research</a>
+<a href="#patents">Patents</a>
+<a href="#projects">Projects</a>
+</div>
+</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Outstanding Scientist in Sustainable Built Environment</h1>
-  <p>Energy-Efficient • Green • Net-Zero Buildings</p>
-
-  <div class="badge">Outstanding Scientist</div>
-
-  <p>
-    <strong>Dr. Ashok Kumar</strong><br>
-    Outstanding Scientist (Energy-Efficient & Net-Zero Built Environment)<br>
-    Affiliated with CSIR-Central Building Research Institute (CSIR-CBRI), Roorkee<br>
-    Founder & CEO – Architectural & Sustainability Consultancy
-  </p>
-
-  <a class="btn" href="#contact">Request Expert Lecture</a>
-  <a class="btn" href="#contact">Consultancy & Collaboration</a>
+<h1>Outstanding Scientist in Sustainable Built Environment</h1>
+<p>Energy-Efficient • Green • Net-Zero Buildings</p>
+<div class="badge">Outstanding Scientist</div>
+<p>
+<strong>Dr. Ashok Kumar</strong><br>
+Outstanding Scientist (Energy-Efficient & Net-Zero Built Environment)<br>
+Affiliated with CSIR-Central Building Research Institute (CSIR-CBRI), Roorkee<br>
+Founder & CEO – Architectural & Sustainability Consultancy
+</p>
+<a class="btn" href="#research">View Research</a>
+<a class="btn" href="#projects">View Projects</a>
 </div>
 
 <!-- ABOUT -->
 <section id="about">
 <h2>About</h2>
 <p>
-Dr. Ashok Kumar is an <strong>Outstanding Scientist</strong> with significant
-contributions to energy-efficient buildings, green construction,
-and net-zero energy & carbon systems.
-He actively bridges <strong>scientific research, policy formulation,
-and real-world architectural implementation</strong> for academia,
-government, and industry.
+Dr. Ashok Kumar is an <strong>Outstanding Scientist</strong> with significant contributions
+to energy-efficient buildings, green construction, and net-zero energy & carbon systems.
+He bridges <strong>scientific research, policy advisory, and real-world implementation</strong>
+for academia, government, and industry.
 </p>
 </section>
 
-<!-- RECOGNITION -->
-<section id="recognition" style="background:var(--light)">
-<h2>🏅 Recognition & Distinction</h2>
-<ul>
-  <li><strong>Outstanding Scientist</strong> in Energy-Efficient & Net-Zero Built Environment</li>
-  <li>National-level recognition for sustainable building research</li>
-  <li>Leadership in translating research into government & industry projects</li>
-  <li>Contributor to national standards, guidelines & capacity-building programs</li>
-</ul>
-</section>
-
-<!-- INFOGRAPHICS -->
-<section>
+<!-- IMPACT -->
+<section id="impact" style="background:var(--light)">
 <h2>Impact at a Glance</h2>
 <div class="grid">
-  <div class="metric"><h3>30–50%</h3><p>Energy Savings Achieved</p></div>
-  <div class="metric"><h3>25+</h3><p>Research Publications</p></div>
-  <div class="metric"><h3>10+</h3><p>Patents & Technologies</p></div>
-  <div class="metric"><h3>50+</h3><p>National Projects</p></div>
+<div class="metric"><h3>30–50%</h3><p>Energy Savings</p></div>
+<div class="metric"><h3>25+</h3><p>Research Papers</p></div>
+<div class="metric"><h3>10+</h3><p>Patents</p></div>
+<div class="metric"><h3>50+</h3><p>Projects</p></div>
 </div>
+</section>
+
+<!-- CHARTS -->
+<section id="charts">
+<h2>Visualized Scientific Output</h2>
+
+<!-- BAR CHART -->
+<h3>Research Output</h3>
+<div style="display:flex;gap:40px;align-items:flex-end;max-width:900px;margin:auto">
+<div style="text-align:center"><div style="height:180px;width:60px;background:#2E8B57"></div><p>Publications</p></div>
+<div style="text-align:center"><div style="height:120px;width:60px;background:#0B3C5D"></div><p>Patents</p></div>
+<div style="text-align:center"><div style="height:200px;width:60px;background:#2E8B57"></div><p>Projects</p></div>
+<div style="text-align:center"><div style="height:140px;width:60px;background:#0B3C5D"></div><p>Consultancy</p></div>
+</div>
+
+<!-- DONUT -->
+<h3 style="margin-top:60px">Domain Contribution</h3>
+<svg width="260" height="260" viewBox="0 0 42 42" style="display:block;margin:auto">
+<circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#e6e6e6" stroke-width="6"/>
+<circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#2E8B57" stroke-width="6"
+stroke-dasharray="40 60" stroke-dashoffset="25"/>
+<circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#0B3C5D" stroke-width="6"
+stroke-dasharray="30 70" stroke-dashoffset="-15"/>
+</svg>
+<p style="text-align:center">
+40% Energy Efficiency • 30% Net-Zero • 30% Green Construction
+</p>
+
+<!-- TIMELINE -->
+<h3 style="margin-top:60px">Impact Timeline</h3>
+<ul style="list-style:none;max-width:800px;margin:auto">
+<li style="padding:15px;border-left:4px solid #2E8B57;margin-bottom:20px">
+<strong>2015–2018</strong><br>Core research & modelling
+</li>
+<li style="padding:15px;border-left:4px solid #0B3C5D;margin-bottom:20px">
+<strong>2019–2021</strong><br>Patents & national projects
+</li>
+<li style="padding:15px;border-left:4px solid #2E8B57">
+<strong>2022–Present</strong><br>Net-Zero leadership & consultancy
+</li>
+</ul>
 </section>
 
 <!-- RESEARCH -->
 <section id="research" style="background:var(--light)">
-<h2>📄 Research Publications</h2>
+<h2>Research Publications</h2>
 <div class="table-container">
 <table>
-<tr><th>Year</th><th>Title</th><th>Journal / Conference</th><th>Domain</th></tr>
-<tr><td>2023</td><td>Energy Performance Analysis of Climate-Responsive Buildings</td><td>Energy & Buildings</td><td>Energy Efficiency</td></tr>
-<tr><td>2022</td><td>Optimization of Building Envelope for Net-Zero Targets</td><td>Journal of Building Engineering</td><td>Net-Zero Buildings</td></tr>
-<tr><td>2021</td><td>Life-Cycle Assessment of Green Building Materials</td><td>Construction & Building Materials</td><td>Sustainability</td></tr>
+<tr><th>Year</th><th>Title</th><th>Journal</th></tr>
+<tr><td>2023</td><td>Climate-Responsive Building Performance</td><td>Energy & Buildings</td></tr>
+<tr><td>2022</td><td>Net-Zero Envelope Optimization</td><td>Journal of Building Engineering</td></tr>
+<tr><td>2021</td><td>Life-Cycle Assessment of Green Materials</td><td>Construction & Building Materials</td></tr>
 </table>
 </div>
 </section>
 
 <!-- PATENTS -->
 <section id="patents">
-<h2>🔒 Patents & Intellectual Property</h2>
+<h2>Patents</h2>
 <div class="table-container">
 <table>
-<tr><th>Patent No.</th><th>Title</th><th>Status</th><th>Application Area</th></tr>
-<tr><td>IN-2023-XXXXX</td><td>System for Optimizing Energy Consumption in Buildings</td><td>Granted</td><td>Energy Management</td></tr>
-<tr><td>IN-2022-XXXXX</td><td>Smart Envelope Design for Climate-Responsive Buildings</td><td>Published</td><td>Green Construction</td></tr>
+<tr><th>Patent No.</th><th>Title</th><th>Status</th></tr>
+<tr><td>IN-2023-XXXXX</td><td>Energy Optimization System</td><td>Granted</td></tr>
+<tr><td>IN-2022-XXXXX</td><td>Smart Building Envelope</td><td>Published</td></tr>
 </table>
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" style="background:var(--light)">
-<h2>🏗️ Research & Consultancy Projects</h2>
+<h2>Projects</h2>
 <div class="table-container">
 <table>
-<tr><th>Project Title</th><th>Funding / Client</th><th>Role</th><th>Outcome</th></tr>
-<tr><td>Energy-Efficient Government Buildings</td><td>Central / State Government</td><td>Principal Investigator</td><td>30–40% Energy Reduction</td></tr>
-<tr><td>Net-Zero Campus Planning</td><td>State Government</td><td>Technical Lead</td><td>Net-Zero Roadmap</td></tr>
-<tr><td>Green Building Material Validation</td><td>Industry Partner</td><td>Advisor</td><td>Technology Deployment</td></tr>
+<tr><th>Project</th><th>Client</th><th>Outcome</th></tr>
+<tr><td>Energy-Efficient Govt Buildings</td><td>Government</td><td>40% Energy Reduction</td></tr>
+<tr><td>Net-Zero Campus</td><td>State Govt</td><td>Net-Zero Roadmap</td></tr>
+<tr><td>Green Material Validation</td><td>Industry</td><td>Technology Deployment</td></tr>
 </table>
 </div>
 </section>
 
 <!-- CTA -->
-<div class="cta" id="contact">
-<h2>Academic, Government & Industry Engagement</h2>
-<p>Research Collaboration • Policy Advisory • Expert Lectures • Consultancy</p>
-<a class="btn" href="#">Request Collaboration</a>
+<div class="cta">
+<h2>Academic • Government • Industry Engagement</h2>
+<p>Research Collaboration • Policy Advisory • Consultancy • Expert Lectures</p>
 </div>
 
 <!-- FOOTER -->
 <footer>
 <p>
-Dr. Ashok Kumar<br>
-Outstanding Scientist – Sustainable Built Environment<br>
+Dr. Ashok Kumar – Outstanding Scientist<br>
 Affiliated with CSIR-CBRI | Founder & CEO – Architectural & Sustainability Consultancy<br>
 Roorkee, Uttarakhand, India
 </p>
-<p>© Centre of Excellence for Energy-Efficient & Net-Zero Built Environment</p>
+<p>© Sustainable Built Environment Knowledge Platform</p>
 </footer>
 
 </body>
